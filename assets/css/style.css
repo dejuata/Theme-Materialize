@@ -40,6 +40,9 @@ section{
   padding-bottom: 20px;
 }
 /*************** Encabezado ***************/
+.container{
+  width: 80%;
+}
 .header{      
   background-image: url(../images/image1.jpg);
   background-size: cover;
@@ -205,6 +208,7 @@ svg{
   padding: 0;
 }
 
+
 /************************ Services ************************/
 
 .img-services{
@@ -218,4 +222,104 @@ svg{
 .divider{
   margin: 0 auto;
   width: 75%;
+}
+
+/****************** portafolio *********************/
+.tabs-content{
+ height: 580px !important;
+}
+.portfolio{
+  height: 200px; 
+  
+  cursor: pointer;
+}
+.portfolio-img{
+  height: 100%;
+  width: 100%;
+  border-radius: 3px;
+}
+.portfolio-link{
+  width: 100%;
+  height: 100%;
+  text-decoration:none;
+}
+.portfolio-color-box{
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  border-radius: 3px;
+  background-color: rgba(80, 89, 99, .50);
+}
+/*estado inicial animacion*/
+.portfolio-item-hover{
+  opacity: 0;
+  transform: translateX(0px) translateY(-195px) translateZ(0px);
+  transform-style: preserve-3d;
+  transition: opacity 500ms, transform 500ms;
+}
+.portfolio-item-hover:hover{
+  opacity: 1;  
+  transform: translateX(0px) translateY(-208px) translateZ(0px); */
+  transform-style: preserve-3d; 
+  transition: opacity 500ms, transform 500ms;
+}
+
+.portfolio-title{
+  margin-bottom: 5px;
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+
+
+.portfolio-sub-title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  color: #fff;
+  font-style: italic;
+  font-weight: 400;
+  text-align: left;
+}
+
+
+.port-img{
+  height:  200px;
+  cursor: pointer;
+}
+.port-img:hover{
+  
+}
+.galery{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 50px;
+}
+
+
+/**************** animacion title ********************/
+.retraso{
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  animation-delay: 1s;
+}
+.retraso2{
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+/*********** aanimacion service ****************/
+.service-icon{
+  color: #039be5;
+}
+.service-title{
+  color: #2b2b2b;
+}
+
+.service-icon:hover{
+  color: #eb6f31 !important;
 }

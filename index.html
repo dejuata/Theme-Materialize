@@ -9,14 +9,16 @@
       <link type="text/css" rel="stylesheet" href="assets/css/style.css"  media="screen,projection"/>
       <!-- Import normalize.css-->
       <link type="text/css" rel="stylesheet" href="assets/css/normalize.css"  media="screen,projection"/>
-      <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600,700" rel="stylesheet">
+      <!-- Import normalize.css-->
+      <link type="text/css" rel="stylesheet" href="assets/css/animate.css"  media="screen,projection"/>
+      
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
 
     <body>
       <!--Inicio-->
-      <header class="header">
+      <header class="header" id="home">
         <div class="shadow ">
           <!--Navbar-->
           <div class="navbar-fixed">
@@ -24,72 +26,91 @@
               <div class="nav-wrapper container">
                 <a href="#" class="brand-logo">LOGO</a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
-                  <li><a href="#">INICIO</a></li>
-                  <li><a href="about.html">QUIÉNES SOMOS</a></li>
-                  <li><a href="service.html">SERVICIOS</a></li>
-                  <li><a href="portfolio.html">PORTAFOLIO</a></li>
-                  <li><a href="blog.html">BLOG</a></li>
-                  <li><a href="contact.html">CONTACTO</a></li>
+                  <li><a class="page-scroll" href="#">INICIO</a></li>
+                  <li><a class="page-scroll" href="#about">QUIÉNES SOMOS</a></li>
+                  <li><a class="page-scroll" href="#service">SERVICIOS</a></li>
+                  <li><a class="page-scroll" href="#portfolio">PORTAFOLIO</a></li>
+                  <li><a class="page-scroll" href="blog.html">BLOG</a></li>
+                  <li><a class="page-scroll" href="#contact">CONTACTO</a></li>
                 </ul>
+
+
               </div>
             </nav>
           </div>
           <!--Wrapper-->
           <div class="white-text center-align wrapper">
-            <h1 class="title">TITULO</h1>
-            <h2 class="subtitle">Lorem ipsum dolor sit</h2>
+            <h1 class="title animated fadeIn" >TITULO</h1>
+            <h2 class="subtitle animated fadeIn retraso">Lorem ipsum dolor sit</h2>
             <div>
-              <a class="button button-primary showcase-panel__btn">button</a>
+              <a class="page-scroll animated fadeInDown retraso2 button button-secondary white-text showcase-panel__btn" href="#contact">button</a>
             </div>
             
           </div>
         </div> 
       </header>
+
       <!--Quienes somos-->
-      <section class="center-align white-text about">
+      <section class="center-align white-text about" id="about">
         <div class="container">
           <h2>QUIÉNES SOMOS</h2>
 
           
           <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum aliquam beatae in aperiam magnam maxime eligendi consequatur voluptates expedita, possimus modi tempore voluptatum cumque repellat tenetur voluptatem et dolores.</h3>
-          <a class="button button-secundary showcase-panel__btn border">Leer mas</a>
+          <a class="button button-secundary showcase-panel__btn border" href="about.html">Leer mas</a>
         </div>
       </section>
 
       
 
       <!--Servicios-->
-      <section>
+      <section id="service">
         <div class="container">  
 
           <h2>SERVICIOS</h2>
           
 
           <div class="row">
+
             <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center blue-text">
-              <i class="material-icons size-icon">flash_on</i>
-            </h2>
-            <h5 class="center">Servicio 1</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam architecto nesciunt, voluptates! Quaerat eveniet, soluta enim, odit ad modi, reprehenderit minima quae aspernatur eligendi maiores quibusdam similique ipsum assumenda eius.</p>
-          </div>
-        </div>
+              <div class="icon-block">
+
+                <a href="service.html#service1">
+                  <h2 class="center service-icon">
+                    <i class="material-icons size-icon">flash_on</i>
+                  </h2>
+                  <h5 class="center service-title">Servicio 1</h5>
+                </a>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam architecto nesciunt, voluptates! Quaerat eveniet, soluta enim, odit ad modi, reprehenderit minima quae aspernatur eligendi maiores quibusdam similique ipsum assumenda eius.</p>
+              </div>
+            </div>
+
+
         <div class="col s12 m4">
           <div class="icon-block">
-            <h2 class="center blue-text">
-              <i class="material-icons size-icon">flash_on</i>
-            </h2>
-            <h5 class="center">Servicio 2</h5>
+
+            <a href="service.html#service2">
+              <h2 class="center service-icon">
+                <i class="material-icons size-icon">flash_on</i>
+              </h2>
+              <h5 class="center service-title">Servicio 2</h5>
+            </a>
+
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum mollitia, soluta culpa laborum accusantium. Error optio iusto suscipit quis aperiam animi doloribus unde id laboriosam pariatur? Corporis quo, accusantium atque!</p>
           </div>
         </div>
+
         <div class="col s12 m4">
           <div class="icon-block">
-            <h2 class="center blue-text">
-              <i class="material-icons size-icon">flash_on</i>
-            </h2>
-            <h5 class="center">Servicio 3</h5>
+
+            <a href="service.html#service3">
+              <h2 class="center service-icon">
+                <i class="material-icons size-icon">flash_on</i>
+              </h2>
+              <h5 class="center service-title">Servicio 3</h5>
+            </a>
+
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum maiores iste perferendis beatae illum repellendus repudiandae id, quidem, architecto aliquam minus ea modi porro harum quis quos. Natus, asperiores, nostrum!</p>
           </div>
         </div>
@@ -102,140 +123,185 @@
       </div>
 
       <!--Portafolio-->
-      <section class="section">
+      <section class="section" id="portfolio">
         <div class="container">
           <h2 class="h2">PORTAFOLIO</h2>
-
+          
           <div class="row">
-            <div class="col s12 m4">
-              <div class="card">
-                <div class="card-image waves-effect waves-block waves-light">
-                  <img class="activator" src="assets/images/image2.jpg">
-                </div>                
-                <div class="card-reveal">
-                  <a href="portfolio.html">
-                    <span class="card-title grey-text text-darken-4">Project<i class="material-icons right">close</i></span>
-                  </a>
-                  <p>Here is some more information about this product that is only revealed once clicked on.</p>
+            <div class="col s12">
+              <ul id="tabs-swipe-demo" class="tabs">
+                <li class="tab col s3"><a href="#test-swipe-1" class="active">Product 1</a></li>
+                <li class="tab col s3"><a href="#test-swipe-2">Product 2</a></li>
+                <li class="tab col s3"><a href="#test-swipe-3">Product 3</a></li>
+                <li class="tab col s3"><a href="#test-swipe-4">Product 4</a></li>
+              </ul>
+            </div>
 
-                </div>
-            </div>
-            </div>
-            <div class="col s12 m4">
-              <div class="card">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="assets/images/image3.jpeg">
-              </div>              
-              <div class="card-reveal">
-                <a href="portfolio.html">
-                  <span class="card-title grey-text text-darken-4">Project<i class="material-icons right">close</i></span>
-                </a>
-                <p>Here is some more information about this product that is only revealed once clicked on.</p>
-              </div>
-            </div>
-            </div>
-            <div class="col s12 m4">
-              <div class="card">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="assets/images/image2.jpg">
-              </div>              
-              <div class="card-reveal">
-                <a href="portfolio.html">
-                  <span class="card-title grey-text text-darken-4">Project<i class="material-icons right">close</i></span>
-                </a>
-                <p>Here is some more information about this product that is only revealed once clicked on.</p>
-              </div>
-            </div>
-            </div>
-          </div>
+            <div id="test-swipe-1" class="col s12 tab-height">  
+                <div class="row" style="padding-top: 50px;">
+                  <div class="col m4">
+                    <div class="portfolio">
+                      <a class="portfolio-link" href="portfolio.html" target="_blank">  
+                        <img src="assets/images/portfolio/1.jpg" alt="" class="portfolio-img"> </img>               
+                        <div class="portfolio-color-box portfolio-item-hover">
+                            <div class="portfolio-title">product 1</div>
+                            <div class="portfolio-sub-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem repudiandae laudantium, similique excepturi consectetur adipisicing.</div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col m4">
+                    <div class="portfolio">
+                      <a class="portfolio-link" href="portfolio.html" target="_blank">
+                        <img src="assets/images/portfolio/8.jpg" alt="" class="portfolio-img"> </img>               
+                        <div class="portfolio-color-box portfolio-item-hover">
+                            <div class="portfolio-title">product 2</div>
+                            <div class="portfolio-sub-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem repudiandae laudantium, similique excepturi consectetur adipisicing.</div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col m4">
+                    <div class="portfolio">
+                      <a class="portfolio-link" href="portfolio.html" target="_blank">
+                        <img src="assets/images/portfolio/12.jpg" alt="" class="portfolio-img"> </img>               
+                        <div class="portfolio-color-box portfolio-item-hover">
+                            <div class="portfolio-title">product 3</div>
+                            <div class="portfolio-sub-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem repudiandae laudantium, similique excepturi consectetur adipisicing.</div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div> 
 
-          <div class="row">
-            <div class="col s12 m4">
-              <div class="card">
-                <div class="card-image waves-effect waves-block waves-light">
-                  <img class="activator" src="assets/images/image3.jpeg">
-                </div>                
-                <div class="card-reveal">
-                  <a href="portfolio.html">
-                    <span class="card-title grey-text text-darken-4">Project<i class="material-icons right">close</i></span>
-                  </a>
-                  <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                </div>
-            </div>
-            </div>
-            <div class="col s12 m4">
-              <div class="card">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="assets/images/image3.jpeg">
-              </div>              
-              <div class="card-reveal">
-                <a href="portfolio.html">
-                    <span class="card-title grey-text text-darken-4">Project<i class="material-icons right">close</i></span>
-                  </a>
-                <p>Here is some more information about this product that is only revealed once clicked on.</p>
-              </div>
-            </div>
-            </div>
-            <div class="col s12 m4">
-              <div class="card">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="assets/images/image2.jpg">
-              </div>              
-              <div class="card-reveal">
-                <a href="portfolio.html">
-                    <span class="card-title grey-text text-darken-4">Project<i class="material-icons right">close</i></span>
-                  </a>
-                <p>Here is some more information about this product that is only revealed once clicked on.</p>
-              </div>
-            </div>
-            </div>
-          </div>
+                <div class="row" style="padding-top: 50px;">
+                  <div class="col m4">
+                    <div class="portfolio">
+                      <a class="portfolio-link" href="portfolio.html" target="_blank">
+                        <img src="assets/images/portfolio/10.jpg" alt="" class="portfolio-img"> </img>               
+                        <div class="portfolio-color-box portfolio-item-hover">
+                            <div class="portfolio-title">product 4</div>
+                            <div class="portfolio-sub-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem repudiandae laudantium, similique excepturi consectetur adipisicing.</div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col m4">
+                    <div class="portfolio">
+                      <a class="portfolio-link" href="portfolio.html" target="_blank">
+                        <img src="assets/images/portfolio/6.jpeg" alt="" class="portfolio-img"> </img>               
+                        <div class="portfolio-color-box portfolio-item-hover">
+                            <div class="portfolio-title">product 5</div>
+                            <div class="portfolio-sub-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem repudiandae laudantium, similique excepturi consectetur adipisicing.</div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col m4">
+                    <div class="portfolio">
+                      <a class="portfolio-link" href="portfolio.html" target="_blank">
+                        <img src="assets/images/portfolio/4.jpg" alt="" class="portfolio-img"> </img>               
+                        <div class="portfolio-color-box portfolio-item-hover">
+                            <div class="portfolio-title">product 6</div>
+                            <div class="portfolio-sub-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem repudiandae laudantium, similique excepturi consectetur adipisicing.</div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div> 
 
-          <div class="row">
-            <div class="col s12 m4">
-              <div class="card">
-                <div class="card-image waves-effect waves-block waves-light">
-                  <img class="activator" src="assets/images/image2.jpg">
-                </div>                
-                <div class="card-reveal">
-                  <a href="portfolio.html">
-                    <span class="card-title grey-text text-darken-4">Project<i class="material-icons right">close</i></span>
-                  </a>
-                  <p>Here is some more information about this product that is only revealed once clicked on.</p>
+
+            </div>
+
+            <div id="test-swipe-2" class="col s12 tab-height">
+              <div class="row" style="padding-top: 50px;">
+                  <div class="col m4">
+                    <div class="portfolio">
+                      <a class="portfolio-link" href="portfolio.html" target="_blank">
+                        <img src="assets/images/portfolio/10.jpg" alt="" class="portfolio-img"> </img>               
+                        <div class="portfolio-color-box portfolio-item-hover">
+                            <div class="portfolio-title">product 1</div>
+                            <div class="portfolio-sub-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem repudiandae laudantium, similique excepturi consectetur adipisicing.</div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col m4">
+                    <div class="portfolio">
+                      <a class="portfolio-link" href="portfolio.html" target="_blank">
+                        <img src="assets/images/portfolio/6.jpeg" alt="" class="portfolio-img"> </img>               
+                        <div class="portfolio-color-box portfolio-item-hover">
+                            <div class="portfolio-title">product 2</div>
+                            <div class="portfolio-sub-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem repudiandae laudantium, similique excepturi consectetur adipisicing.</div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col m4">
+                    <div class="portfolio">
+                      <a class="portfolio-link" href="portfolio.html" target="_blank">
+                        <img src="assets/images/portfolio/4.jpg" alt="" class="portfolio-img"> </img>               
+                        <div class="portfolio-color-box portfolio-item-hover">
+                            <div class="portfolio-title">product 3</div>
+                            <div class="portfolio-sub-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem repudiandae laudantium, similique excepturi consectetur adipisicing.</div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
                 </div>
+
+                <div class="row" style="padding-top: 50px;">
+                  <div class="col m4">
+                    <div class="portfolio">
+                      <a class="portfolio-link" href="portfolio.html" target="_blank">
+                        <img src="assets/images/portfolio/1.jpg" alt="" class="portfolio-img"> </img>               
+                        <div class="portfolio-color-box portfolio-item-hover">
+                            <div class="portfolio-title">product 4</div>
+                            <div class="portfolio-sub-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem repudiandae laudantium, similique excepturi consectetur adipisicing.</div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col m4">
+                    <div class="portfolio">
+                      <a class="portfolio-link" href="portfolio.html" target="_blank">
+                        <img src="assets/images/portfolio/8.jpg" alt="" class="portfolio-img"> </img>               
+                        <div class="portfolio-color-box portfolio-item-hover">
+                            <div class="portfolio-title">product 5</div>
+                            <div class="portfolio-sub-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem repudiandae laudantium, similique excepturi consectetur adipisicing.</div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col m4">
+                    <div class="portfolio">
+                      <a class="portfolio-link" href="portfolio.html" target="_blank">
+                        <img src="assets/images/portfolio/12.jpg" alt="" class="portfolio-img"> </img>               
+                        <div class="portfolio-color-box portfolio-item-hover">
+                            <div class="portfolio-title">product 6</div>
+                            <div class="portfolio-sub-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem repudiandae laudantium, similique excepturi consectetur adipisicing.</div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div> 
             </div>
+
+
+
+            <div id="test-swipe-3" class="col s12 tab-height">
+              Test 3
             </div>
-            <div class="col s12 m4">
-              <div class="card">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="assets/images/image3.jpeg">
-              </div>              
-              <div class="card-reveal">
-                <a href="portfolio.html">
-                    <span class="card-title grey-text text-darken-4">Project<i class="material-icons right">close</i></span>
-                  </a>
-                <p>Here is some more information about this product that is only revealed once clicked on.</p>
-              </div>
+
+            <div id="test-swipe-4" class="col s12 tab-height ">
+              Test 4
             </div>
-            </div>
-            <div class="col s12 m4">
-              <div class="card">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="assets/images/image2.jpg">
-              </div>              
-              <div class="card-reveal">
-                <a href="portfolio.html">
-                    <span class="card-title grey-text text-darken-4">Project<i class="material-icons right">close</i></span>
-                  </a>
-                <p>Here is some more information about this product that is only revealed once clicked on.</p>
-              </div>
-            </div>
-            </div>
+
           </div>
+          
 
           
         </div>
-
       </section>
 
       <div class="divider">
@@ -291,11 +357,11 @@
         <div class="divider-div"></div>
       </div>
 
-      <section class="section">
+      <section class="section" id="contact">
         <div class="container">
           <h2 class="h2">Contactame</h2>
           <div class="row">
-            <div class="col m6">
+            <div class="col m5 offset-m1 colombia">
               <div class="left-align">
                 <p>
                   <strong>Dirección:</strong>
@@ -313,33 +379,34 @@
               <br>
               <div class="row">              
                 <ul class="social-media-icons">
-                            <li>
-                              <!--icon facebook-->
-                              <a href="" class="icon-contact" black">               
-                                <svg viewBox="0 0 24 24">
-                                  <path fill="#00000" d="M17,2V2H17V6H15C14.31,6 14,6.81 14,7.5V10H14L17,10V14H14V22H10V14H7V10H10V6A4,4 0 0,1 14,2H17Z" />
-                                </svg>                
-                              </a>                       
-                            </li>
-                            <li>
-                              <!--icon twitter-->
-                              <a href="" class="icon-contact">
-                                <svg viewBox="0 0 24 24">
-                                  <path fill="#00000" d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6 20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z" />
-                                </svg>
-                              </a>                 
-                            </li>
-                            <li>
-                              <!--icon google +-->
-                              <a href="" class="icon-contact">
-                                <svg viewBox="0 0 24 24">                  
-                                  <path fill="#00000" d="M23,11H21V9H19V11H17V13H19V15H21V13H23M8,11V13.4H12C11.8,14.4 10.8,16.4 8,16.4C5.6,16.4 3.7,14.4 3.7,12C3.7,9.6 5.6,7.6 8,7.6C9.4,7.6 10.3,8.2 10.8,8.7L12.7,6.9C11.5,5.7 9.9,5 8,5C4.1,5 1,8.1 1,12C1,15.9 4.1,19 8,19C12,19 14.7,16.2 14.7,12.2C14.7,11.7 14.7,11.4 14.6,11H8Z" />
-                                </svg>
-                              </a> 
-                            </li>
-                          </ul>
+                  <li>
+                    <!--icon facebook-->
+                    <a href="" class="icon-contact" black">               
+                      <svg viewBox="0 0 24 24">
+                        <path fill="#00000" d="M17,2V2H17V6H15C14.31,6 14,6.81 14,7.5V10H14L17,10V14H14V22H10V14H7V10H10V6A4,4 0 0,1 14,2H17Z" />
+                      </svg>                
+                    </a>                       
+                  </li>
+                  <li>
+                    <!--icon twitter-->
+                    <a href="" class="icon-contact">
+                      <svg viewBox="0 0 24 24">
+                        <path fill="#00000" d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6 20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z" />
+                      </svg>
+                    </a>                 
+                  </li>
+                  <li>
+                    <!--icon google +-->
+                    <a href="" class="icon-contact">
+                      <svg viewBox="0 0 24 24">                  
+                        <path fill="#00000" d="M23,11H21V9H19V11H17V13H19V15H21V13H23M8,11V13.4H12C11.8,14.4 10.8,16.4 8,16.4C5.6,16.4 3.7,14.4 3.7,12C3.7,9.6 5.6,7.6 8,7.6C9.4,7.6 10.3,8.2 10.8,8.7L12.7,6.9C11.5,5.7 9.9,5 8,5C4.1,5 1,8.1 1,12C1,15.9 4.1,19 8,19C12,19 14.7,16.2 14.7,12.2C14.7,11.7 14.7,11.4 14.6,11H8Z" />
+                      </svg>
+                    </a> 
+                  </li>
+                </ul>
               </div>
             </div>
+
             <div class="col m6">
               <div class="input-field col s12">
                 <label for="first_name">Nombre Completo</label>
@@ -366,6 +433,7 @@
           </div>
         </div>        
       </section>
+
       <!--Map-->
       <section class="section-map">
         <div class="map">
@@ -433,7 +501,7 @@
         </div>
         <div class="footer-copyright ">
           <div class="container social-media valign-wrapper">
-          © 2014 Copyright Text
+          © 2017 Copyright Text
           <ul class="social-media-icons">
             <li>
               <!--icon facebook-->
@@ -470,6 +538,7 @@
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="assets/js/materialize.min.js"></script>
+      <script type="text/javascript" src="assets/js/main.js"></script>
       
     </body>
   </html>
